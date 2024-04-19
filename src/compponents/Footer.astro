@@ -1,0 +1,52 @@
+---
+import "../styles/style.css"
+---
+
+<footer>
+	<div class="nav">
+		<ul><li>forisde</li>
+		<li>about</li>
+		<li>jobb</li>
+		</ul>
+	</div>
+<div class="form">
+	<h3>TILMELD NYHEDSBREV</h3>
+	<form name="contact">
+	  <input type="email" id="email" name="email" />
+	  <input type="submit" value="Tilmeld" class="knapp">
+	</form>
+</footer>
+
+	<style>
+/*få form till vänster*/
+.nav{
+	display: flex;
+    justify-content: space-between;
+}
+
+.form{
+	width: 300px;
+	height: 400px;
+	background-color: var(--font_col);
+	color: var(--background_col);
+	text-align:  center;
+}
+h3{
+text-align: center;
+}
+.knapp{
+	color: var(--background_col);
+	border: none;
+    background: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+border: none; /* Tar bort den befintliga kanten */
+    border-bottom: 1px solid white; /* Lägger till en vit underlinje */
+    background: none; /* Tar bort bakgrunden */
+    color: var(--background_col); /* Färg på texten */
+    width: 100%; /* Bredden på e-postfältet */
+    padding: 5px 0; /* Justerar inmatningsfältets padding */
+    margin-bottom: 20px; /* Justerar avståndet mellan e-postfältet och knappen */
+	</style>
