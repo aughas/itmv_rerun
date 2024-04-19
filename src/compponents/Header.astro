@@ -2,9 +2,10 @@
 import "../styles/style.css";
 ---
 
-<video width="100%" height="300" muted autoplay loop>
+<video muted autoplay loop>
     <source src="../../public/videos/hero_mov_temp.mp4" type="video/mp4">
 </video>
+<img src="../../public/img/logo.png" alt="">
 
 <style>
     video {
@@ -13,6 +14,15 @@ import "../styles/style.css";
     height: 400px;
     object-fit: cover;
     object-position: center;
+    opacity: 70%;
         }
+    img{
+        position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 15%;
+    }
 
 </style>
