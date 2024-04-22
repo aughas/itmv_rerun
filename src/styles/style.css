@@ -13,6 +13,7 @@ html {
   --font_col: #00415d;
   --background_col: #fffff7;
   --accent_col: #ed7655;
+  --hover_col: #011e2a;
 }
 body {
   background-color: var(--background_col);
@@ -20,7 +21,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   font-family: "Kantumruy Pro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -34,5 +36,9 @@ h2 {
   font-size: 28px;
 }
 h3 {
+  font-size: 15px;
+}
+
+p {
   font-size: 15px;
 }

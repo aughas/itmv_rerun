@@ -3,6 +3,7 @@ import "../styles/style.css"
 ---
 
 <footer>
+    <div class="footer">
 	<div class="nav">
         <a href="#">HVEM ER VI?</a>
         <a href="#">WEBFEATURE</a>
@@ -12,6 +13,21 @@ import "../styles/style.css"
         <a href="#">ESG(DATA)</a>
 	</div>
 
+    <div class="findoss_container">
+       
+<div class="findos1">
+    <h3>Her finder du os:</h3>
+<p class="bold">Værkstedet i Lundtoftegade</p>
+<p>Lundtoftegade 23, 1 sal</p>
+<p>2200 København N</p>
+</div>
+<div class="findos2">
+<p class="bold">Værkstedet i Farum Midtpunkt</p>
+<p>Nygårdterasserne 213A</p>
+<p>3520 Farum</p>
+</div>
+    </div>
+</div>
 <div class="form">
 	<h3>TILMELD NYHEDSBREV</h3>
     <div class="form2">
@@ -58,12 +74,19 @@ h3{
 text-align: center;
 color: var(--background_col);
 }
+.findos1 h3{
+    color: var(--font_col);
+    font-size: 15px;
+    text-align: left;
+    padding-bottom: 5px;
+}
 .knapp{
 	color: var(--background_col);
 	border: none;
     background: none; 
     padding-top: 8px; 
     margin-left: 20px;
+    cursor: pointer;
 }
 /*styles för ikoner*/
 .ikoner img{
@@ -82,23 +105,64 @@ color: var(--background_col);
     color: var(--font_col); 
     font-size: 15px;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 50px;
     font-family: "Kantumruy Pro", sans-serif;
     letter-spacing: -0.8px;
 }
+.knapp:hover{
+    color: var(--font_col);
+}
+.nav a:hover{
+    color: var(--hover_col);
+}
+.bold{
+    font-weight: bold;
+}
+.footer{
+        display: flex;
+    justify-content: space-between;
+    }
+    .findoss_container{
+        margin: 50px 0 0 100px;
+    }
+    .findos2{
+        margin-top: 15px;
+    }
+@media (max-width: 800px){
+    .findoss_container{
+        margin: 50px 25px 0 25px;
+    }
+    .findos2{
+        margin-top: 15px;
+    }}
 @media (max-width: 650px){
+    .findoss_container{
+        margin-top: 50px;
+    }
+    .findos2{
+        margin-top: 15px;
+    }
     footer{
         display: block;
        
     }
     .form{
         width: 100%;
+        height: 250px;
+        padding-top: 50px;
     }
+    .mail{
+        width: 400px;
+    }
+    .ikoner{
+    padding-left: 200px;}
     h3{
 text-align: center;
 font-size: 30px;
 }
-
+.nav{
+    margin-bottom: 15px;
+}
 .contact{
     padding-top: 20px;
 }
