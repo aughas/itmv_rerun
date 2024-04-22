@@ -34,12 +34,14 @@ import Header from "../compponents/Header.astro";
     .karrusel img{
         width: 10%;
         /*lineup är en rad*/
-        margin-right: 8px; /* Justera mellanrummet mellan bilderna efter behov */
+        margin-right: 8px;
     }
     .karrusel {
     display: flex;
-    flex-wrap: nowrap; /* För att hindra innehållet från att wrapa sig på flera rader */
-    animation: moveLinear 60s linear infinite; /* Anpassa varaktighet och andra egenskaper här */
+    /*1 rad:*/
+    flex-wrap: nowrap;
+    /*speed och varaktighet*/
+    animation: moveLinear 60s linear infinite;
 }
   @keyframes moveLinear {
     from {
