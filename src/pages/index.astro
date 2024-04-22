@@ -18,7 +18,8 @@ import Scroll from "../compponents/Scroll.astro";
 
 </article>
 
-<img class="bags" src="public/img/bags.webp" alt="billede af tæsker">
+<!-- <img class="bags" src="public/img/bags.webp" alt="billede af tæsker"> -->
+<div class="paralax_test"></div>
 
 
 <div class="karrusel">
@@ -57,6 +58,16 @@ import Scroll from "../compponents/Scroll.astro";
   }
   .bags{
     width: 40%;
+  }
+  .paralax_test{
+    background-image: url(../../public/img/bags.webp);
+    min-height: 500px;
+   width: 60%;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   }
     .karrusel img{
         width: 10%;
