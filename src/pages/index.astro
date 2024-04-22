@@ -3,11 +3,26 @@ import "../styles/style.css";
 import MainLayout from "../layout/MainLayout.astro";
 import Navigation from "../compponents/Navigation.astro";
 import Header from "../compponents/Header.astro";
+import Karrusel from "../compponents/Karrusel.astro";
 ---
 
 <MainLayout>
     <Header />
     <Navigation />
+<div class="karrusel">
+ <Karrusel header="Samarbetspartnere"> 
+<img src="public/img/underprotection.png" alt="underprotection">
+<img src="public/img/stilling.png" alt="stilling">
+<img src="public/img/nationalmuseet.png" alt="nationalmuseet">
+<img src="public/img/glyptoteket.png" alt="glyptoteket">
+<img src="public/img/siff.png" alt="siff">
+<img src="public/img/brandts_kunst.png" alt="brandts kunst">
+ </Karrusel>
+</div>
 </MainLayout>
 
-
+<style>
+    .karrusel img{
+        width: 10%;
+    }
+</style>
