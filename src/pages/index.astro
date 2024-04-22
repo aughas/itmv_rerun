@@ -15,8 +15,11 @@ import Scroll from "../compponents/Scroll.astro";
 <article class="omos">
 <h2>HVEM ER VI?</h2>
 <p>I Tråd Med Verden (ITMV) er en socialøkonomisk virksomhed drevet af foreningen I Tråd Med Verden. I partnerskab med KAB driver vi sy- og design værksteder i udsatte boligområder, hvor vi arbejder med design og genanvendelse af kasserede tekstiler som omdrejningspunkt for at skabe jobmuligheder, netværk og livskvalitet for mennesker, som har mistet fodfæste på arbejdsmarkedet. </p>
-<img src="public/img/bags.webp" alt="billede af tæsker">
+
 </article>
+
+<img class="bags" src="public/img/bags.webp" alt="billede af tæsker">
+
 
 <div class="karrusel">
 <img src="public/img/underprotection.png" alt="underprotection">
@@ -45,7 +48,14 @@ import Scroll from "../compponents/Scroll.astro";
 </MainLayout>
 
 <style>
-  .omos img{
+  .omos{
+ padding: 20px 100px 20px 100px;
+ background-color: #F0EEEB;
+  }
+  .omos h3{
+    padding-bottom: 5px;
+  }
+  .bags{
     width: 40%;
   }
     .karrusel img{
