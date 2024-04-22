@@ -3,26 +3,51 @@ import "../styles/style.css";
 import MainLayout from "../layout/MainLayout.astro";
 import Navigation from "../compponents/Navigation.astro";
 import Header from "../compponents/Header.astro";
-import Karrusel from "../compponents/Karrusel.astro";
 ---
 
 <MainLayout>
     <Header />
     <Navigation />
 <div class="karrusel">
- <Karrusel header="Samarbetspartnere"> 
 <img src="public/img/underprotection.png" alt="underprotection">
 <img src="public/img/stilling.png" alt="stilling">
 <img src="public/img/nationalmuseet.png" alt="nationalmuseet">
 <img src="public/img/glyptoteket.png" alt="glyptoteket">
 <img src="public/img/siff.png" alt="siff">
 <img src="public/img/brandts_kunst.png" alt="brandts kunst">
- </Karrusel>
+<img src="public/img/akb.png" alt="akb">
+<img src="public/img/copenhagen_foto_festival.png" alt="copenhagen foto festival">
+<img src="public/img/fureso.png" alt="Furesø kommune">
+<img src="public/img/kab.png" alt="kab">
+<img src="public/img/kbh_kommune.png" alt="kbh kommune">
+<img src="public/img/nicholasn.png" alt="Nocholas Nybro">
+<img src="public/img/wallnut.png" alt="wallnut">
+<img src="public/img/ganni.png" alt="ganni">
+<img src="public/img/frak.png" alt="frak">
+<img src="public/img/menu.png" alt="menu">
+<img src="public/img/norrebro.png" alt="Nørrebro">
+<img src="public/img/ikea.png" alt="ikea">
 </div>
 </MainLayout>
 
 <style>
     .karrusel img{
         width: 10%;
+        /*lineup är en rad*/
+        margin-right: 8px; /* Justera mellanrummet mellan bilderna efter behov */
     }
+    .karrusel {
+    display: flex;
+    flex-wrap: nowrap; /* För att hindra innehållet från att wrapa sig på flera rader */
+    animation: moveLinear 60s linear infinite; /* Anpassa varaktighet och andra egenskaper här */
+}
+  @keyframes moveLinear {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
 </style>
