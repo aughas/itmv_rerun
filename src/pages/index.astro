@@ -4,6 +4,7 @@ import MainLayout from "../layout/MainLayout.astro";
 import Navigation from "../compponents/Navigation.astro";
 import Header from "../compponents/Header.astro";
 import Scroll from "../compponents/Scroll.astro";
+import Karrusel from "../compponents/Karrusel.astro";
 ---
 
 <MainLayout>
@@ -20,7 +21,7 @@ import Scroll from "../compponents/Scroll.astro";
 
 <div class="paralax_test"></div>
 
-
+<Karrusel header="Samarbedspartnere">
 <div class="karrusel">
 <img src="public/img/underprotection.png" alt="underprotection">
 <img src="public/img/stilling.png" alt="stilling">
@@ -44,7 +45,7 @@ import Scroll from "../compponents/Scroll.astro";
 <img src="public/img/mads_norgaard.png" alt="mads nørgaard">
 <img src="public/img/ordrupgaard.png" alt="ordrupgaard">
 <img src="public/img/public_funk.png" alt="public funk">
-</div>
+</div></Karrusel>
 </MainLayout>
 
 <style>
