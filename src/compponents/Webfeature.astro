@@ -2,12 +2,9 @@
 
 ---
 
-<h1>MØD KVINDERNE</h1>
-<div class="bgimg1">
-    <div class="cap">
-        <!-- <span>Helene</span> -->
-    </div>
-</div>
+
+
+<h1 class="head">MØD KVINDERNE</h1>
 <div class="webf">
     <video controls>
         <source src="../../public/videos/helene.mp4" type="video/mp4">
@@ -44,6 +41,11 @@
         <h3>Syerske</h3>
         </div>
     </div>
+    <div class="bgimg1">
+        <div class="cap">
+            <!-- <span>Helene</span> -->
+        </div>
+    </div>
 
 </div>
 
@@ -51,16 +53,16 @@
     
     .bgimg1{
         background-image: url(../../public/img/gruppbild.webp);
-        min-height: 300px;
+        min-height: 150px;
     }
 
     .bgimg2{
         background-image: url(../../public/img/pink.webp);
-        min-height: 300px;
+        min-height: 150px;
     }
     .bgimg3{
         background-image: url(../../public/img/flera.webp);
-        min-height: 300px;
+        min-height: 150px;
     }
 
     .bgimg1, .bgimg2, .bgimg3{
@@ -86,6 +88,10 @@
     width: 100%;
     text-align: center;
     color: #000;
+}
+
+.text{
+    text-align: center;
 }
 
 video {
@@ -137,6 +143,13 @@ video {
     }
     .text h3{
         font-size: 30px;
+    }
+
+    .bgimg1, .bgimg2, .bgimg3{
+        min-height: 300px;
+    }
+    .head{
+        margin-top: 50px;
     }
         }
 
