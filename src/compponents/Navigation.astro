@@ -11,7 +11,7 @@ import "../styles/style.css";
         <a href="#data_esg">ESG(DATA)</a>
     </div>
 </article> -->
-<article>
+<!-- <article>
     <div class="nav_container" id="navContainer">
         <a href="#hvem">HVEM ER VI?</a>
         <a href="#kvinder">MØD KVINDERNE</a>
@@ -19,10 +19,19 @@ import "../styles/style.css";
         <a href="#samarb">SAMARB.PARTNERE</a>
         <a href="#data_esg">ESG(DATA)</a>
     </div>
-</article>
+</article> -->
+<div class="dropdown">
+    <button class="dropbtn">MENU</button>
+    <div class="dropdown-content">
+        <a href="#hvem">HVEM ER VI?</a>
+        <a href="#kvinder">MØD KVINDERNE</a>
+        <a href="#">REPAIR SERVICE</a>
+        <a href="#samarb">SAMARB.PARTNERE</a>
+        <a href="#data_esg">ESG(DATA)</a>
+    </div>
 
 <style>
-    .nav_container {
+    /* .nav_container {
     position: fixed; 
     top: -60px; 
     right: -60px;
@@ -73,6 +82,59 @@ import "../styles/style.css";
     letter-spacing: -0.8px;
 }
 }
-    
+     */
+
+     .dropbtn {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #00415D;
+  border: none;
+  font-size: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dropdown {
+  place-content: end end;
+  padding: 5px;
+  position: fixed;
+  display: inline-block;
+  top: 20px;
+  right: 20px;
+  z-index: 7;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 45px;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 90%;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: #00415D;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--hover_col;)
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: var(--hover_col);
+}
 </style>
 
