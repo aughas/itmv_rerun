@@ -12,6 +12,7 @@ img {
 html {
   --font_col: #00415d;
   --background_col: #fffff7;
+  --section_col: #f0eeeb;
   --accent_col: #ed7655;
   --hover_col: #011e2a;
 }
@@ -31,6 +32,8 @@ p {
 }
 h1 {
   font-size: 48px;
+  text-align: center;
+  padding-bottom: 15px;
 }
 h2 {
   font-size: 28px;

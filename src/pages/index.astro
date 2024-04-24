@@ -15,7 +15,7 @@ import Webfeature from "../compponents/Webfeature.astro"
     <Navigation />
 
 <article class="omos">
-<h2>HVEM ER VI?</h2>
+<h1>HVEM ER VI?</h1>
 <p>I Tråd Med Verden (ITMV) er en socialøkonomisk virksomhed drevet af foreningen I Tråd Med Verden. I partnerskab med KAB driver vi sy- og design værksteder i udsatte boligområder, hvor vi arbejder med design og genanvendelse af kasserede tekstiler som omdrejningspunkt for at skabe jobmuligheder, netværk og livskvalitet for mennesker, som har mistet fodfæste på arbejdsmarkedet. </p>
 
 </article>
@@ -48,15 +48,43 @@ import Webfeature from "../compponents/Webfeature.astro"
 <img src="public/img/public_funk.png" alt="public funk">
 </div></Karrusel>
 <Webfeature />
+
+
+  <h1>DATA</h1>
+  <article class="data">
+  <div class="diagram1"><img src="public/img/lagekagediagram.png" alt="lagekage diagram">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perspiciatis ipsum neque harum. Nobis quod praesentium accusamus harum vero dolores iusto sapiente odit fuga? Ducimus laboriosam accusamus autem voluptas qui.</p></div>
+  <div class="diagram2"><img src="public/img/lagekagediagram.png" alt="andet diagram">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum asperiores molestiae quidem aut impedit a quos ea. Porro saepe magnam velit repellendus ea doloremque unde adipisci amet eius dolorem.</p></div>
+  </article>
+
 </MainLayout>
 
+
 <style>
+  /*data styles */
+.data{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+margin-bottom: 45px; 
+}
+.data img{
+  width: 80%;
+  margin-bottom: 15px;
+}
+.diagram1{
+  margin-left: 40px;
+}
+.diagram2{
+  margin: 0 10px 0 30px;
+}
+.data p{
+  padding-left: 15px;
+  padding-right: 50px;
+}
   .omos{
- padding: 20px 100px 20px 100px;
- background-color: #F0EEEB;
-  }
-  .omos h3{
-    padding-bottom: 5px;
+ padding: 30px 100px 30px 100px;
+ background-color: var(--section_col);
   }
 
   .paralax_test{
