@@ -4,6 +4,12 @@ const header = Astro.props.header;
 ---
 
 <div class="karrusel">
-    <h2>{header}</h2>
+    <h1>{header}</h1>
     <slot />
 </div>
+
+<style>
+    h1{
+        margin-top: 50px;
+    }
+</style>
