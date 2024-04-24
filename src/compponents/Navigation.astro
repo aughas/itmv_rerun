@@ -2,8 +2,17 @@
 import "../styles/style.css";
 ---
 
-<article>
+<!-- <article>
     <div class="nav_container">
+        <a href="#hvem">HVEM ER VI?</a>
+        <a href="#kvinder">MØD KVINDERNE</a>
+        <a href="#">REPAIR SERVICE</a>
+        <a href="#samarb">SAMARB.PARTNERE</a>
+        <a href="#data_esg">ESG(DATA)</a>
+    </div>
+</article> -->
+<article>
+    <div class="nav_container" id="navContainer">
         <a href="#hvem">HVEM ER VI?</a>
         <a href="#kvinder">MØD KVINDERNE</a>
         <a href="#">REPAIR SERVICE</a>
@@ -22,9 +31,36 @@ import "../styles/style.css";
     padding-top: 70px;
     padding-right: 70px;
     border-radius: 60px;
-    z-index: 5;
+    z-index: 7;
 }
 
+.nav_container a {
+    display: block; 
+    text-decoration: none; 
+    color: #00415D; 
+    font-size: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: right;
+    font-family: "Kantumruy Pro", sans-serif;
+    letter-spacing: -0.8px;
+}
+.nav_container a:hover{
+    color: var(--hover_col);
+} 
+
+@media (min-width: 650px) {
+    .nav_container {
+    position: fixed; 
+    top: -60px; 
+    right: -60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    padding-top: 70px;
+    padding-right: 70px;
+    border-radius: 60px;
+    z-index: 7;
+}
 .nav_container a {
     display: block; 
     text-decoration: none; 
@@ -36,8 +72,7 @@ import "../styles/style.css";
     font-family: "Kantumruy Pro", sans-serif;
     letter-spacing: -0.8px;
 }
-.nav_container a:hover{
-    color: var(--hover_col);
 }
     
 </style>
+
