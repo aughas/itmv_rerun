@@ -92,7 +92,7 @@ import Webfeature from "../compponents/Webfeature.astro"
     padding: 20px
   }
 .bli_partner{
-margin: 15px 300px 15px 300px
+padding: 15px 300px 15px 300px
 }
 label, .knapp{
   color: var(--font_col);
@@ -104,7 +104,7 @@ input, textarea {
   border: none;
   border-radius: 4px;
   background-color: var(--section_col);
-  width: 50%;
+  width: 60%;
 }
   textarea {
   height: 120px;
@@ -176,6 +176,26 @@ align-items: center;
   #samarb{
     margin-top: 40px;
   }
-  
+  @media (max-width: 1020px){
+    .bli_partner{
+      padding: 20px 50px 0px 150px;
+    }
+    .omos{
+      padding: 20px;
+    }
+    input, textarea{
+      width: 80%;
+    }
+  }
+  @media (max-width: 450px)
+  {
+    .bli_partner{
+      padding: 5px 0 5px 60px;
+    }
+    input, textarea{
+      width: 80%;
+    }
+  }
+
 
 </style>
