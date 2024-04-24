@@ -14,14 +14,14 @@ import Webfeature from "../compponents/Webfeature.astro"
 
     <Navigation />
 
-<article class="omos">
+<article class="omos" id="hvem">
 <h1>HVEM ER VI?</h1>
 <p>I Tråd Med Verden (ITMV) er en socialøkonomisk virksomhed drevet af foreningen I Tråd Med Verden. I partnerskab med KAB driver vi sy- og design værksteder i udsatte boligområder, hvor vi arbejder med design og genanvendelse af kasserede tekstiler som omdrejningspunkt for at skabe jobmuligheder, netværk og livskvalitet for mennesker, som har mistet fodfæste på arbejdsmarkedet. </p>
 
 </article>
 
 <div class="paralax_test"></div>
-
+<section id="samarb">
 <Karrusel header="Samarbedspartnere">
 <div class="karrusel">
 <img src="public/img/underprotection.png" alt="underprotection">
@@ -47,9 +47,12 @@ import Webfeature from "../compponents/Webfeature.astro"
 <img src="public/img/ordrupgaard.png" alt="ordrupgaard">
 <img src="public/img/public_funk.png" alt="public funk">
 </div></Karrusel>
+</section>
+<section id="kvinder">
 <Webfeature />
+</section>
 
-
+<section id="data_esg">
   <h1>DATA</h1>
   <article class="data">
   <div class="diagram1"><img src="public/img/lagekagediagram.png" alt="lagekage diagram">
@@ -57,7 +60,7 @@ import Webfeature from "../compponents/Webfeature.astro"
   <div class="diagram2"><img src="public/img/lagekagediagram.png" alt="andet diagram">
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum asperiores molestiae quidem aut impedit a quos ea. Porro saepe magnam velit repellendus ea doloremque unde adipisci amet eius dolorem.</p></div>
   </article>
-
+</section>
 </MainLayout>
 
 
