@@ -87,9 +87,10 @@ import Webfeature from "../compponents/Webfeature.astro"
 
 <h1>REPAIR SERVICE</h1>
 <section class="repair">
-<div>
+<div class="img">
 <img src="public/img/repairservice.webp" alt="repair service img"></div>
-<div><h2>VIDSTE DU AT, I TRÅD MED VERDEN TILBYDER REPAIR SERVICE PÅ DIN ARBEJDSPLADS?</h2>
+<div class="service">
+<h2>VIDSTE DU AT, I TRÅD MED VERDEN TILBYDER REPAIR SERVICE PÅ DIN ARBEJDSPLADS?</h2>
 <h3>HVORFOR?</h3>
 <ol>
   <li>Gør genanvendelse let og tilgængeligt for dine medarbejdere.</li>
@@ -114,10 +115,20 @@ import Webfeature from "../compponents/Webfeature.astro"
 
 <style>
   /*repari service */
+
+  @media (min-width: 1000px){
   .repair{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
+}
+.img{
+  padding-top: 40px;
+}
+.service{
+  padding-bottom: 40px;
+}
   ol{
     color: var(--font_col);
     padding: 10px 40px 0 40px;
@@ -125,9 +136,13 @@ import Webfeature from "../compponents/Webfeature.astro"
   .repair h3{
     text-align: center;
     font-weight: bold;
+    padding-top: 10px;
   }
   .repair h2{
-    padding: 10px;
+    padding: 30px 0 0 0;
+  }
+  .repair p{
+    padding: 5px 30px 5px 30px;
   }
   /*samarbdspartner styles*/
   .partner p{
