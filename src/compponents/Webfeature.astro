@@ -3,15 +3,85 @@
 ---
 
 <h1>MØD KVINDERNE</h1>
+<div class="bgimg1">
+    <div class="cap">
+        <span>NAVN 1</span>
+    </div>
+</div>
 <div class="webf">
-<video src="../../public/videos/select01.mp4" type="video/mp4"></video>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum ullam tenetur ex iusto earum! Molestias deserunt et distinctio beatae, eius quas veniam provident cum obcaecati, eos earum mollitia necessitatibus.</p>
+    <video controls>
+        <source src="../../public/videos/select01.mp4" type="video/mp4">
+    </video>
+<h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum ullam tenetur ex iusto earum! Molestias deserunt et distinctio beatae, eius quas veniam provident cum obcaecati, eos earum mollitia necessitatibus.</h2>
+</div>  
+<div class="bgimg2">
+    <div class="cap">
+        <span>NAVN 2</span>
+    </div>
+</div>
+<div class="webf">
+    <video controls>
+        <source src="../../public/videos/select01.mp4" type="video/mp4">
+    </video>
+<h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum ullam tenetur ex iusto earum! Molestias deserunt et distinctio beatae, eius quas veniam provident cum obcaecati, eos earum mollitia necessitatibus.</h2>
+</div>
+<div class="bgimg3">
+    <div class="cap">
+        <span>NAVN </span>
+    </div>
+</div>
+<div class="webf">
+    <video controls>
+        <source src="../../public/videos/select01.mp4" type="video/mp4">
+    </video>
+<h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum ullam tenetur ex iusto earum! Molestias deserunt et distinctio beatae, eius quas veniam provident cum obcaecati, eos earum mollitia necessitatibus.</h2>
 </div>
 
 <style>
+    
+    .bgimg1{
+        background-image: url(../../public/img/gruppbild.webp);
+        min-height: 500px;
+    }
+
+    .bgimg2{
+        background-image: url(../../public/img/pink.webp);
+        min-height: 500px;
+    }
+    .bgimg3{
+        background-image: url(../../public/img/flera.webp);
+        min-height: 500px;
+    }
+
+    .bgimg1, .bgimg2, .bgimg3{
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .cap span {
+    background-color: #f1f1f1;
+    color: #e64949;
+    padding: 18px;
+    font-size: 25px;
+}
+
+.cap {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
     .webf{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 50px 80px;
+    text-align: justify;
     }
       video {
         display: block;
@@ -21,4 +91,6 @@
     object-position: center;
     opacity: 80%;
         }
+        
+
 </style>
