@@ -5,34 +5,34 @@
 <h1>MØD KVINDERNE</h1>
 <div class="bgimg1">
     <div class="cap">
-        <span>NAVN 1</span>
+        <span>Helene</span>
     </div>
 </div>
 <div class="webf">
     <video controls>
-        <source src="../../public/videos/select01.mp4" type="video/mp4">
+        <source src="../../public/videos/helene.mp4" type="video/mp4">
     </video>
 <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum ullam tenetur ex iusto earum! Molestias deserunt et distinctio beatae, eius quas veniam provident cum obcaecati, eos earum mollitia necessitatibus.</h2>
 </div>  
 <div class="bgimg2">
     <div class="cap">
-        <span>NAVN 2</span>
+        <span>Naila</span>
     </div>
 </div>
 <div class="webf">
     <video controls>
-        <source src="../../public/videos/select01.mp4" type="video/mp4">
+        <source src="../../public/videos/naila.mp4" type="video/mp4">
     </video>
 <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum ullam tenetur ex iusto earum! Molestias deserunt et distinctio beatae, eius quas veniam provident cum obcaecati, eos earum mollitia necessitatibus.</h2>
 </div>
 <div class="bgimg3">
     <div class="cap">
-        <span>NAVN </span>
+        <span>Rhadija</span>
     </div>
 </div>
 <div class="webf">
     <video controls>
-        <source src="../../public/videos/select01.mp4" type="video/mp4">
+        <source src="../../public/videos/rhadija.mp4" type="video/mp4">
     </video>
 <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum ullam tenetur ex iusto earum! Molestias deserunt et distinctio beatae, eius quas veniam provident cum obcaecati, eos earum mollitia necessitatibus.</h2>
 </div>
@@ -90,6 +90,16 @@
     object-fit: cover;
     object-position: center;
     opacity: 80%;
+        }
+
+        .webf{
+            scale: .8; opacity: 0;
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range: 250px 500px;
+        }
+        @keyframes fade-in {
+            to{scale: 1; opacity: 1;}
         }
         
 
