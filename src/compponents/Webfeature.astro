@@ -77,12 +77,6 @@
     text-align: center;
     color: #000;
 }
-    .webf{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 50px 80px;
-    text-align: justify;
-    }
       video {
         display: block;
     width: 100%;
@@ -91,16 +85,27 @@
     object-position: center;
     opacity: 80%;
         }
+        h2{
+            margin-top: 20px;
+        }
 
         .webf{
             scale: .8; opacity: 0;
             animation: fade-in linear forwards;
             animation-timeline: view();
             animation-range: 250px 500px;
+            padding: 50px 80px;
+            text-align: justify;
         }
         @keyframes fade-in {
             to{scale: 1; opacity: 1;}
         }
         
+        @media (min-width: 650px) {
+            .webf{
+            display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+        }
 
 </style>
